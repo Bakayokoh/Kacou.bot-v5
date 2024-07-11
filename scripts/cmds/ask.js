@@ -76,8 +76,8 @@ const fonts = {
  if (messageContent.startsWith("ai")) {
  const input = messageContent.replace(/^ai\s*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply(`✰....𝗧𝗥𝗔𝗡𝗦𝗙𝗢𝗥𝗠𝗘𝗥𝗦....✰:\n⧠⧠⧠⧠⧠✰.✰.✰⧠⧠⧠⧠⧠
-\n${response}🫰✨\n\n╰┈┈┈➤⊹⊱✰✫✫✰⊰⊹`, messageID);
+ message.reply(`\n
+\n${response}\n\n`, messageID);
  }
  }
  }
